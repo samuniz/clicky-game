@@ -1,0 +1,73 @@
+[
+  {
+    "id": 1,
+    "name": "AmericanSkimo",
+    "image": "https://gfp-2a3tnpzj.stackpathdns.com/wp-content/uploads/2016/07/American-Eskimo-600x600.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Australian Shepheard",
+    "image": "https://gfp-2a3tnpzj.stackpathdns.com/wp-content/uploads/2016/07/Australian-Shepherd-600x600.jpg"
+  
+  },
+  {
+    "id": 3,
+    "name": "Siberian Husky",
+    "image": "https://gfp-2a3tnpzj.stackpathdns.com/wp-content/uploads/2019/11/Gary-M-Purple-Collar-1-600x600.jpg"
+  
+  },
+  {
+    "id": 4,
+    "name": "Rottweiler",
+    "image": "https://gfp-2a3tnpzj.stackpathdns.com/wp-content/uploads/2019/12/Dasher-M1-600x600.jpg"
+   
+  },
+  {
+    "id": 5,
+    "name": "Dalmatian",
+    "image": "https://gfp-2a3tnpzj.stackpathdns.com/wp-content/uploads/2016/07/Dalmatian-Puppies-For-Sale-600x600.jpg"
+ 
+  },
+  {
+    "id": 6,
+    "name": "Westie",
+    "image": "https://gfp-2a3tnpzj.stackpathdns.com/wp-content/uploads/2019/11/Janette-f1-600x600.jpg"
+
+  },
+  {
+    "id": 7,
+    "name": "Weimaraner",
+    "image": "https://gfp-2a3tnpzj.stackpathdns.com/wp-content/uploads/2019/12/Lacy-F1-600x600.jpg"
+ 
+  },
+  {
+    "id": 8,
+    "name": "Cocker",
+    "image": "https://gfp-2a3tnpzj.stackpathdns.com/wp-content/uploads/2016/07/Cockalier-Puppies-For-Sale-600x600.jpg"
+    
+  },
+  {
+    "id": 9,
+    "name": "Penbroke",
+    "image": "https://gfp-2a3tnpzj.stackpathdns.com/wp-content/uploads/2015/07/Abby_photo-4-600x600.jpg"
+ 
+  },
+  {
+    "id": 10,
+    "name": "Springerdoddle",
+    "image": "https://gfp-2a3tnpzj.stackpathdns.com/wp-content/uploads/2015/06/Ferdinand_photo-1-600x600.jpg"
+    
+  },
+  {
+    "id": 11,
+    "name": "Shar Pei",
+    "image": "https://gfp-2a3tnpzj.stackpathdns.com/wp-content/uploads/2016/07/Chinese-Shar-Pei-600x600.jpg"
+    
+  },
+  {
+    "id": 12,
+    "name": "Colie",
+    "image": "https://gfp-2a3tnpzj.stackpathdns.com/wp-content/uploads/2016/07/Collie-Puppies-For-Sale-600x600.jpg"
+    
+  }
+]
