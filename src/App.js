@@ -1,7 +1,12 @@
 import React, { Component } from "react";
+// @ts-ignore
 import FriendCard from "./components/FriendCard";
 import Wrapper from "./components/Wrapper";
-import Title from "./components/Title";
+import Navbar from "./components/Navbar";
+import Header from "./components/Header";
+import Main from "./components/Main";
+import Footer from "./components/Footer";
+
 import friends from "./friends.json";
 
 class App extends Component {
@@ -20,19 +25,22 @@ class App extends Component {
   // Map over this.state.friends and render a FriendCard component for each friend object
   render() {
     return (
-      <Wrapper>
-        <Title>Friends List</Title>
+      
+      <Wrapper>  
+        <Navbar></Navbar>
+        <Header></Header>
+        <Main>
         {this.state.friends.map(friend => (
           <FriendCard
             removeFriend={this.removeFriend}
             id={friend.id}
             key={friend.id}
-            name={friend.name}
             image={friend.image}
-            occupation={friend.occupation}
-            location={friend.location}
+            
           />
         ))}
+        </Main>
+        <Footer></Footer>
       </Wrapper>
     );
   }
