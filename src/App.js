@@ -14,6 +14,7 @@ class App extends Component {
   // Setting this.state.friends to the friends json array
   state = {
     // clickedCard: 0,
+    clickedPuppies: [],
     puppies, 
     score: 0,
     totalScore: 0,
@@ -23,10 +24,20 @@ class App extends Component {
 
 
   buttonOnClick = id => {
+    // call the shuffle function and PASS IN this.state.puppies
+    this.shuffle(this.state.puppies);
     console.log(id)
-    // this.setState({
-    //   clicledCard: event.target.id
-    // }) 
+    if (this.state.clickedPuppies.includes(id)){
+      console.log("you lose");
+      this.setState({
+        score:0, 
+        clickedPuppies: []
+      }) 
+    }else {
+      this.state.clickedPuppies.push(id)
+      console.log(this.state.clickedPuppies)
+      // increase score 
+    }
   }
 
 
