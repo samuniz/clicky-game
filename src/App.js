@@ -6,12 +6,10 @@ import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Main from "./components/Main";
 import Footer from "./components/Footer";
-import Score from "./components/Score "
-
+import Score from "./components/Score ";
 import puppies from "./puppies.json";
 
 class App extends Component {
-  // Setting this.state.friends to the friends json array
   state = {
     // clickedCard: 0,
     clickedPuppies: [],
@@ -20,13 +18,19 @@ class App extends Component {
     totalScore: 0,
     // dataClicked: false  
   };
-
+  
+  shuffle = array => {
+    array.sort(function(a, b){return 0.5 - Math.random()});
+    this.setState({
+      puppies: array
+    })
+  }
 
 
   buttonOnClick = id => {
     // call the shuffle function and PASS IN this.state.puppies
     this.shuffle(this.state.puppies);
-    console.log(id)
+    // console.log(id)
     if (this.state.clickedPuppies.includes(id)){
       console.log("you lose");
       this.setState({
@@ -34,21 +38,28 @@ class App extends Component {
         clickedPuppies: []
       }) 
     }else {
+      // this.state.score;
+      console.log(this.state.score)
       this.state.clickedPuppies.push(id)
-      console.log(this.state.clickedPuppies)
-      // increase score 
-    }
+      this.setState ({
+        score: this.state.score + 1
+      })
+      // console.log(this.state.clickedPuppies);
   }
 
+  }
 
   // Map over this.state.friends and render a FriendCard component for each friend object
-  render() {
+  // @ts-ignore
+  render(){
     return (
       
       <Wrapper>  
         <Navbar></Navbar>
         <Header></Header>
-        <Score></Score>
+        <Score score = {this.state.score}>
+         
+        </Score>
         <Main>
         {this.state.puppies.map(puppie => (
           <PuppieCard
@@ -64,5 +75,6 @@ class App extends Component {
     );
   }
 }
+
 
 export default App;

@@ -1,12 +1,11 @@
 import React from "react"
+import "./style.css";
 
 function Score(props) {
   return (
     <ul>
-      <li>Score</li>
-      <li className="scoreTally">0</li>
+      <li className="scoreTally">Score: {props.score}</li>
       <li>Top Score</li>
-      <li className="scoreTotal">0</li>
     </ul>
   );
 }

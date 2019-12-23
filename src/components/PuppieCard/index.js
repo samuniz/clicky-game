@@ -12,7 +12,6 @@ function PuppieCard(props) {
         <img onClick={() => props.clickFunction(props.id)} alt={props.name} src={props.image}/>
       </div>
       </div>
-    
   );
 }
 
