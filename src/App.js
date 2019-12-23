@@ -6,7 +6,6 @@ import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Main from "./components/Main";
 import Footer from "./components/Footer";
-import Score from "./components/Score ";
 import puppies from "./puppies.json";
 
 class App extends Component {
@@ -55,11 +54,11 @@ class App extends Component {
     return (
       
       <Wrapper>  
-        <Navbar></Navbar>
+        <Navbar score = {this.state.score}>
+        </Navbar>
         <Header></Header>
-        <Score score = {this.state.score}>
          
-        </Score>
+    
         <Main>
         {this.state.puppies.map(puppie => (
           <PuppieCard
